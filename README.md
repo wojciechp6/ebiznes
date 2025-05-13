@@ -105,26 +105,26 @@ dodać widżety sonarowe do README w repozytorium dane projektu z
 wynikami.
 
 :white_check_mark: 3.0 Należy dodać litera do odpowiedniego kodu aplikacji serwerowej w
-hookach gita [Link do commita 1]()
+hookach gita [Link do commita 1](https://github.com/wojciechp6/ebiznes/commit/5ee9c3c2861f4cd8ed435ea037580effb5c82583)
 
 :white_check_mark: 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod
-aplikacji serwerowej) [Link do commita 2]()
+aplikacji serwerowej) [Link do commita 2](https://github.com/wojciechp6/ebiznes/commit/5ee9c3c2861f4cd8ed435ea037580effb5c82583)
 
 :white_check_mark: 4.0 Należy wyeliminować wszystkie zapaszki w kodzie w Sonarze (kod
-aplikacji serwerowej) [Link do commita 3]()
+aplikacji serwerowej) [Link do commita 3](https://github.com/wojciechp6/ebiznes/commit/5ee9c3c2861f4cd8ed435ea037580effb5c82583)
 
 :white_check_mark: 4.5 Należy wyeliminować wszystkie podatności oraz błędy bezpieczeństwa
-w kodzie w Sonarze (kod aplikacji serwerowej) [Link do commita 4]()
+w kodzie w Sonarze (kod aplikacji serwerowej) [Link do commita 4](https://github.com/wojciechp6/ebiznes/commit/5ee9c3c2861f4cd8ed435ea037580effb5c82583)
 
-:white_check_mark: 5.0 Należy wyeliminować wszystkie błędy oraz zapaszki w kodzie
+:x: 5.0 Należy wyeliminować wszystkie błędy oraz zapaszki w kodzie
 aplikacji klienckiej [Link do commita 5]()
 
 
 Kod: 
 
-[Server](https://github.com/p3choco/Tech_Learning_repo_SERVER)
+[Backend](https://github.com/wojciechp6/ebiznes-sonarcube-backend)
 
-[Client](https://github.com/p3choco/Tech_Learning_repo_CLIENT) 
+[Frontend](https://github.com/wojciechp6/ebiznes-sonarcube-frontend) 
 
 
 **Zadanie 8** OAuth2
