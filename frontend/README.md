@@ -1,3 +1,20 @@
+### Frontend
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=wojciechp6_ebiznes-sonarcube-frontend&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=wojciechp6_ebiznes-sonarcube-frontend)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=wojciechp6_ebiznes-sonarcube-frontend&metric=bugs)](https://sonarcloud.io/summary/new_code?id=wojciechp6_ebiznes-sonarcube-frontend)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=wojciechp6_ebiznes-sonarcube-frontend&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=wojciechp6_ebiznes-sonarcube-frontend)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=wojciechp6_ebiznes-sonarcube-frontend&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=wojciechp6_ebiznes-sonarcube-frontend)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=wojciechp6_ebiznes-sonarcube-frontend&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=wojciechp6_ebiznes-sonarcube-frontend)
+
+
+### Backend
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=wojciechp6_ebiznes-sonarcube-backend&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=wojciechp6_ebiznes-sonarcube-backend)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=wojciechp6_ebiznes-sonarcube-backend&metric=bugs)](https://sonarcloud.io/summary/new_code?id=wojciechp6_ebiznes-sonarcube-backend)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=wojciechp6_ebiznes-sonarcube-backend&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=wojciechp6_ebiznes-sonarcube-backend)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=wojciechp6_ebiznes-sonarcube-backend&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=wojciechp6_ebiznes-sonarcube-backend)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=wojciechp6_ebiznes-sonarcube-backend&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=wojciechp6_ebiznes-sonarcube-backend)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

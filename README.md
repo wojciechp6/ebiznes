@@ -94,6 +94,39 @@ minimum jednym scenariuszem negatywnym per endpoint
 :x: 5.0 Należy uruchomić testy funkcjonalne na Browserstacku
 
 
+
+**Zadanie 7** Sonar
+
+Należy dodać projekt aplikacji klienckiej oraz serwerowej (jeden
+branch, dwa repozytoria) do Sonara w wersji chmurowej
+(https://sonarcloud.io/). Należy poprawić aplikacje uzyskując 0 bugów,
+0 zapaszków, 0 podatności, 0 błędów bezpieczeństwa. Dodatkowo należy
+dodać widżety sonarowe do README w repozytorium dane projektu z
+wynikami.
+
+:white_check_mark: 3.0 Należy dodać litera do odpowiedniego kodu aplikacji serwerowej w
+hookach gita [Link do commita 1]()
+
+:white_check_mark: 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod
+aplikacji serwerowej) [Link do commita 2]()
+
+:white_check_mark: 4.0 Należy wyeliminować wszystkie zapaszki w kodzie w Sonarze (kod
+aplikacji serwerowej) [Link do commita 3]()
+
+:white_check_mark: 4.5 Należy wyeliminować wszystkie podatności oraz błędy bezpieczeństwa
+w kodzie w Sonarze (kod aplikacji serwerowej) [Link do commita 4]()
+
+:white_check_mark: 5.0 Należy wyeliminować wszystkie błędy oraz zapaszki w kodzie
+aplikacji klienckiej [Link do commita 5]()
+
+
+Kod: 
+
+[Server](https://github.com/p3choco/Tech_Learning_repo_SERVER)
+
+[Client](https://github.com/p3choco/Tech_Learning_repo_CLIENT) 
+
+
 **Zadanie 8** OAuth2
 
 :white_check_mark: 3.0 logowanie przez aplikację serwerową (bez Oauth2)

@@ -1,0 +1,26 @@
+#!/bin/sh
+
+check_prerequisites() {
+    if ! command -v golangci-lint >/dev/null 2>&1; then
+        echo "Błąd: golangci-lint nie jest zainstalowany. Zainstaluj go i spróbuj ponownie."
+        exit 1
+    fi
+}
+
+run_linter() {
+    echo "Uruchamianie golangci-lint..."
+    if ! output=$(golangci-lint run --fix 2>&1); then
+        echo "Wykryto błędy przez golangci-lint. Rozwiąż je przed wykonaniem commita:"
+        echo "$output"
+        exit 1
+    fi
+}
+
+main() {
+    echo "Rozpoczynanie hooka pre-commit..."
+    check_prerequisites
+    run_linter
+    echo "golangci-lint zakończył działanie pomyślnie."
+}
+
+main
