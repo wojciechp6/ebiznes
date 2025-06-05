@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Sklep z Ubraniami</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        #chat { border: 1px solid #ccc; padding: 20px; width: 400px; min-height: 200px; margin-bottom: 20px; }
+        .user { color: blue; }
+        .bot { color: green; }
+        .sentiment { font-size: 0.9em; color: #888; }
+        #starters { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Chat Sklep z Ubraniami</h2>
+    <div id="starters">
+        <strong>Otwarcia rozmowy:</strong>
+        <ul id="openings"></ul>
+        <strong>Zamknięcia rozmowy:</strong>
+        <ul id="closings"></ul>
+    </div>
+    <div id="chat"></div>
+    <form id="chatForm">
+        <input type="text" id="message" placeholder="Napisz wiadomość..." style="width:300px;" required>
+        <button type="submit">Wyślij</button>
+    </form>
+    <script>
+        // Pobierz przykładowe otwarcia i zamknięcia
+        fetch('/starters')
+            .then(res => res.json())
+            .then(data => {
+                const openings = document.getElementById('openings');
+                data.openings.forEach(txt => {
+                    const li = document.createElement('li');
+                    li.textContent = txt;
+                    openings.appendChild(li);
+                });
+                const closings = document.getElementById('closings');
+                data.closings.forEach(txt => {
+                    const li = document.createElement('li');
+                    li.textContent = txt;
+                    closings.appendChild(li);
+                });
+            });
+
+        const chatDiv = document.getElementById('chat');
+        document.getElementById('chatForm').onsubmit = async function(e) {
+            e.preventDefault();
+            const msg = document.getElementById('message').value;
+            chatDiv.innerHTML += `<div class='user'><b>Ty:</b> ${msg}</div>`;
+            document.getElementById('message').value = '';
+            const res = await fetch('/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: msg })
+            });
+            const data = await res.json();
+            chatDiv.innerHTML += `<div class='bot'><b>Bot:</b> ${data.reply}<div class='sentiment'>Sentyment: ${data.sentiment || '-'}</div></div>`;
+            chatDiv.scrollTop = chatDiv.scrollHeight;
+        };
+    </script>
+</body>
+</html>
