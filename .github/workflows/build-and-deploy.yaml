@@ -60,3 +60,18 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CF1BBCC5338A439BB7712387C49C93C3 }}
           images: 'ebizneswojciechp6.azurecr.io/ebiznes-frontend:${{ github.sha }}'
+
+      - name: Send mail notification
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "[ebiznes] Build & Deploy zakończone"
+          to: ${{ secrets.NOTIFY_EMAIL }}
+          from: ${{ secrets.NOTIFY_EMAIL }}
+          body: |
+            Build & deploy aplikacji frontend i backend zakończone pomyślnie na Azure Web Apps.
+            Commit: ${{ github.sha }}
+            Repo: ${{ github.repository }}
