@@ -28,18 +28,18 @@ jobs:
       - name: Build and push backend image
         uses: docker/build-push-action@v3
         with:
-          context: frontend/backend
+          context: cloud/backend
           push: true
           tags: ebizneswojciechp6.azurecr.io/ebiznes-backend:${{ github.sha }}
-          file: frontend/backend/Dockerfile
+          file: cloud/backend/Dockerfile
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v3
         with:
-          context: frontend/frontend
+          context: cloud/frontend
           push: true
           tags: ebizneswojciechp6.azurecr.io/ebiznes-frontend:${{ github.sha }}
-          file: frontend/frontend/Dockerfile
+          file: cloud/frontend/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest

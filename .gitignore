@@ -26,10 +26,6 @@ build/
 # VSCode
 .vscode/
 
-# Environment
-.env
-.env.*
-
 # Others
 dist/
 coverage/
