@@ -1,4 +1,5 @@
 **Zadanie 2** Scala
+
 :white_check_mark: 3.0 Należy stworzyć kontroler do Produktów
 
 :white_check_mark: 3.5 Do kontrolera należy stworzyć endpointy zgodnie z CRUD - dane pobierane z listy
@@ -143,3 +144,40 @@ Kod:
 
 Folder: oauth2
 
+
+**Zadanie 9** ChatGPT bot
+
+:white_check_mark: 3.0 należy stworzyć po stronie serwerowej osobny serwis do łącznia z chatGPT do usługi chat
+
+:white_check_mark: 3.5 należy stworzyć interfejs frontowy dla użytkownika, który komunikuje się z serwisem; odpowiedzi powinny być wysyałen do frontendowego interfejsu
+
+:white_check_mark: 4.0 stworzyć listę 5 różnych otwarć oraz zamknięć rozmowy
+
+:white_check_mark: 4.5 filtrowanie po zagadnieniach związanych ze sklepem (np. ograniczenie się jedynie do ubrań oraz samego sklepu) do GPT
+
+:white_check_mark: 5.0 filtrowanie odpowiedzi po sentymencie
+
+[commit](https://github.com/wojciechp6/ebiznes/commit/e38f1cbdad4689b09e088fd531169543f50be35e)
+
+Folder: chat
+
+**Zadanie 10** Chmura/CI
+
+:white_check_mark: 3.0 Należy stworzyć odpowiednie instancje po stronie chmury na dockerze
+
+:white_check_mark: 3.5 Stworzyć odpowiedni pipeline w Github Actions do budowania aplikacji (np. via fatjar)
+
+:white_check_mark: 4.0 Dodać notyfikację mailową o zbudowaniu aplikacji
+
+:white_check_mark: 4.5 Dodać krok z deploymentem aplikacji serwerowej oraz klienckiej na chmurę
+
+:x: 5.0 Dodać uruchomienie regresyjnych testów automatycznych
+(funkcjonalnych) jako krok w Actions
+
+[commit](https://github.com/wojciechp6/ebiznes/commit/665a92b7b2a72cb14fc7d63ff6b4ef90bae9b3b2)
+
+Folder: cloud
+
+[FRONTEND](https://ebiznes-frontend-wp6-c6f2fvdghcexccaz.polandcentral-01.azurewebsites.net)
+
+[BACKEND](https://ebiznes-backend-wp6-agfwbuffe7cuhmg6.polandcentral-01.azurewebsites.net/api/products)
